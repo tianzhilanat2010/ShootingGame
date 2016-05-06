@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Spell_MajinFukusyou
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0921730474, y: -2.3198595, z: .454101562}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9473cb6eef428e49b1dce3fbd233637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellName: "\u5927\u9B54\u6CD5\u300C\u9B54\u795E\u5FA9\u8AA6\u300D"
+  spellTime: 30
+  basicHp: 0
+  SpawnPoint:
+  - {x: -1.70000005, y: 5}
+  - {x: 1.70000005, y: 5}
+  - {x: -2.5, y: 3}
+  - {x: 2.5, y: 3}
+  BulletPool0:
+    ProtoType: {fileID: 100000, guid: b533297798a01b54496891005424c65a, type: 2}
+    Size: 300
+    mMaxObjectUsed: 0
+  BulletPool1:
+    ProtoType: {fileID: 100000, guid: cfc601e420b0d9a46a7184839cefb93b, type: 2}
+    Size: 10
+    mMaxObjectUsed: 0
+  BulletPool2:
+    ProtoType: {fileID: 100000, guid: ab515ad1dac5c8c4bb7e27f67f0bb3b5, type: 2}
+    Size: 50
+    mMaxObjectUsed: 0
+  BulletPool3:
+    ProtoType: {fileID: 100000, guid: 757dbf2bcaa2ac14491d8cbfd96058be, type: 2}
+    Size: 50
+    mMaxObjectUsed: 0
+  BulletPool4:
+    ProtoType: {fileID: 100000, guid: 14e142c7d6fc8fb459b8ce0bda2dea31, type: 2}
+    Size: 100
+    mMaxObjectUsed: 0
+  SoftLaserPool:
+    ProtoType: {fileID: 100002, guid: f236e6b04e74954468d862ecc90fc372, type: 2}
+    Size: 4
+    mMaxObjectUsed: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

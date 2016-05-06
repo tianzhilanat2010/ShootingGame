@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Spell_FlowerInCage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.09551406, y: -3.86469984, z: -1.55932617}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e3cd364992cfd64182904c11c898c79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellName: "\u300C\u82B1\u7B3C\u300D"
+  spellTime: 30
+  basicHp: 0
+  LaserPool:
+    ProtoType: {fileID: 100002, guid: 740eba7aeff377c44970982a1d6ff569, type: 2}
+    Size: 21
+    mMaxObjectUsed: 0
+  FlowerBullerPool:
+    ProtoType: {fileID: 100000, guid: c65fca5821f01324eafdf71550629095, type: 2}
+    Size: 600
+    mMaxObjectUsed: 0
+  StartAngleDiffList:
+  - 0
+  - -150
+  - 150
+  - -130
+  - 130
+  - -105
+  - 105
+  Speed: 5
+  ShotInterval: 4
+  AngleChangeInterval: 2.20000005
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

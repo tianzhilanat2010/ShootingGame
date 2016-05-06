@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Spell_BigWaterfall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.62412786, y: -2.10123944, z: .286376953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f12043ddd03e4441935589b84c12bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellName: "\u7011\u7B26\u300C\u4E5D\u5929\u5927\u7011\u5E03\u300D"
+  spellTime: 30
+  basicHp: 0
+  bulletPool0:
+    ProtoType: {fileID: 100000, guid: 37c531f2c556fed4e8a2f255db2ff610, type: 2}
+    Size: 300
+    mMaxObjectUsed: 0
+  spawnPositionX0:
+    min: -3.5
+    max: 3.5
+  spawnPositionY0:
+    min: -5.5
+    max: -5
+  startSpeed0:
+    min: 9.80000019
+    max: 10
+  endSpeed0:
+    min: -3
+    max: -2
+  lerpTime0:
+    min: 2.29999995
+    max: 2.5
+  bulletPool1:
+    ProtoType: {fileID: 100000, guid: 91afd1b4261893e48b412b101b7902f0, type: 2}
+    Size: 30
+    mMaxObjectUsed: 0
+  spawnPositionX1:
+    min: -3.5
+    max: 3.5
+  spawnPositionY1:
+    min: 6
+    max: 6
+  startSpeed1:
+    min: 4
+    max: 5
+  startAngle1:
+    min: 165
+    max: 195
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
