@@ -156,7 +156,7 @@ public partial class CommonBulletController : MonoBehaviour
 			controller.mSpriteRenderer.material = controller.MaterialDisappear;
 			controller.rigidbody2D.velocity = Vector2.zero;
             controller.collider2D.enabled = false;
-			controller.StartCoroutine (distroyBullet (controller));
+            controller.StartCoroutine(destroyBullet(controller));
 		}
 		public void onUpdate(CommonBulletController controller)
 		{
@@ -167,7 +167,7 @@ public partial class CommonBulletController : MonoBehaviour
 			
 		}
 
-		private IEnumerator distroyBullet(CommonBulletController controller)
+		private IEnumerator destroyBullet(CommonBulletController controller)
 		{
 			yield return new WaitForSeconds (0.1f);
 			controller.gameObject.SetActive (false);
